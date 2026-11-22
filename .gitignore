@@ -22,3 +22,14 @@ outputs/
 # OS files
 .DS_Store
 Thumbs.db
+# Spark temp files
+.spark-tmp/
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Claude Code local settings
+.claude/
+
+# Trained Spark MLlib models (regenerate with the training scripts)
+models/

@@ -1,0 +1,16 @@
+# FraudShield - Python dependencies
+# Target environment: Python 3.11.x, OpenJDK 17 (required by Spark)
+
+# --- Big Data processing and machine learning ---
+pyspark==4.3.0
+
+# --- Dashboard ---
+streamlit==1.42.0
+plotly==6.0.0
+
+# --- Small-scale data handling for dashboard summaries and exported tables ---
+# Spark remains the primary processing/ML framework; pandas is only used for
+# the already-aggregated CSV/Parquet files the dashboard reads.
+pandas==2.2.3
+pyarrow==19.0.0
+matplotlib==3.10.0
