@@ -187,7 +187,8 @@ claim directly with a feature ablation (§10).
 
 ## 7. Machine learning methodology (Member 2)
 
-Full reasoning in **[docs/METHODOLOGY.md](docs/METHODOLOGY.md)**. In brief:
+Full reasoning in **[docs/METHODOLOGY.md](docs/METHODOLOGY.md)**; the complete
+write-up is **[docs/PROJECT_REPORT.md](docs/PROJECT_REPORT.md)**. In brief:
 
 **Features.** Ten numeric columns plus one-hot encoded `type`.
 `isFraud` is the target; `isFlaggedFraud`, `nameOrig`, `nameDest` are excluded
@@ -381,6 +382,8 @@ distributed; the serving layer stays thin.
 Every number shown is read from the files in `outputs/` - nothing is hard-coded,
 and a missing file produces a message naming the script to run.
 
+![System architecture](docs/images/01_architecture.png)
+
 ## 13. Installation
 
 Full guide with troubleshooting: **[docs/SETUP.md](docs/SETUP.md)**.
@@ -437,10 +440,15 @@ FraudShield/
 ├── env.sh                        sets JAVA_HOME, venv, PYSPARK_PYTHON
 ├── run_pipeline.sh               runs the whole Member 2 pipeline
 ├── docs/
+│   ├── PROJECT_REPORT.md         the full project report
 │   ├── METHODOLOGY.md            why the ML is built this way
-│   ├── SETUP.md                  install, run, troubleshoot
 │   ├── RESULTS.md                measured results in full
-│   └── MEMBER1_EDA_FINDING.md    Member 1's original README text
+│   ├── TEST_REPORT.md            test strategy, evidence, defects found
+│   ├── SETUP.md                  install, run, troubleshoot
+│   ├── DEMO_SCRIPT.md            demonstration flow and viva Q&A
+│   ├── MEMBER1_EDA_FINDING.md    Member 1's original README text
+│   ├── FraudShield_Presentation.pptx   18-slide deck with speaker notes
+│   └── images/                   figures generated from the real results
 ├── src/
 │   ├── (24 Member 1 scripts - unmodified)
 │   ├── config.py                 paths, schema, split boundaries, Spark session
